@@ -45,3 +45,5 @@ Outputs: `results/all_results.json`, `results/SCOREBOARD.md`, figures in `docs/f
 Synthetic corpus; static surrogate costs in E03; the recurrence estimator in E12 is biased and approximate; E09 and E10 are conceptual demonstrations on constructed sources.
 
 MIT licence, Solinexta AI.
+
+- **Complete Study App** — [`interactive/Hutter-Casebook-Complete-Study-App.html`](interactive/Hutter-Casebook-Complete-Study-App.html): one offline file with, for each of the 18 cases, a plain-language tool, a theory deep-dive, the full chapter with exercises, and worked answers.
