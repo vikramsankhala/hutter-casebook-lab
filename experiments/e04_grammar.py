@@ -1,4 +1,4 @@
-"""E04 - Recursive grammars and description length (Case 7).
+"""E04 - Recursive grammars and description length (Case 8).
 
 Re-Pair builds a straight-line grammar. Description length (bits):
   final sequence: n_seq * entropy(final sequence)   [order-0, empirical]

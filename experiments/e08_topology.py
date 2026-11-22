@@ -1,4 +1,4 @@
-"""E08 - Topological approaches (Case 11).
+"""E08 - Topological approaches (Case 12).
 
 (a) Planarity of markup: '{{ }}' and '[[ ]]' pairs never cross -> a PUSHDOWN (stack) context.
     Count of planar pairings = Catalan numbers: log2 C_n ~ 2n bits is the *structure* entropy.

@@ -1,4 +1,4 @@
-"""E12 - Theoretical-physics approaches (Case 15).
+"""E12 - Theoretical-physics approaches (Case 16).
 
 (a) Statistical mechanics: log-loss is a FREE ENERGY; temperature scaling p ~ p^(1/T)/Z.  Fit T on the first half,
     evaluate on the second.

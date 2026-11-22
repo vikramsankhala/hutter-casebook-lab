@@ -47,3 +47,4 @@ Synthetic corpus; static surrogate costs in E03; the recurrence estimator in E12
 MIT licence, Solinexta AI.
 
 - **Complete Study App** — [`interactive/Hutter-Casebook-Complete-Study-App.html`](interactive/Hutter-Casebook-Complete-Study-App.html): one offline file with, for each of the 18 cases, a plain-language tool, a theory deep-dive, the full chapter with exercises, and worked answers.
+- **Code Walkthrough** — [`interactive/Code-Walkthrough.html`](interactive/Code-Walkthrough.html): a plain-language, case-by-case tour of the code with run commands, exercises and a ready-made lecture plan.

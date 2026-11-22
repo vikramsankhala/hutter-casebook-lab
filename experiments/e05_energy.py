@@ -1,4 +1,4 @@
-"""E05 - Energy-based models (Case 8).
+"""E05 - Energy-based models (Case 9).
 
 Energy E(x|ctx) = -sum_k W_k[h_k(ctx), x];  p(x|ctx) = exp(-E)/Z  (Boltzmann / log-linear).
 Learned online by AdaGrad on log-loss; compared with count-based backoff, and with a

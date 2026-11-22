@@ -1,4 +1,4 @@
-"""E07 - Differential / information geometry of mixing (Case 9).
+"""E07 - Differential / information geometry of mixing (Case 11).
 
 Space of distributions = probability simplex with Fisher-Rao metric.
   m-geodesic (linear mixture)       q = sum w_k p_k

@@ -1,4 +1,4 @@
-"""E10 - Harmonic analysis / Langlands-flavoured approaches (Case 13).
+"""E10 - Harmonic analysis / Langlands-flavoured approaches (Case 14).
 
 Langlands in one student-sized sentence: objects that look unrelated (arithmetic data, automorphic forms,
 Galois representations) share one generator; harmonic analysis on groups (characters, Fourier transforms)

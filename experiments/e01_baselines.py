@@ -1,4 +1,4 @@
-"""E01 - What does an honest baseline look like? (Case 1-2)"""
+"""E01 - What does an honest baseline look like? (Cases 1-3 and 5)"""
 import zlib, bz2, lzma
 from hcl import models, coders
 from experiments.common import get_data, save, order0_bits

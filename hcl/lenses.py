@@ -1,4 +1,4 @@
-"""Reversible preprocessing as LENSES (the functorial view, Chapter 14).
+"""Reversible preprocessing as LENSES (the functorial view, Chapter 15).
 
 A lens is a pair  get : S -> (V, C)   and   put : (V, C) -> S  with the laws
     PutGet:  put(get(s)) == s                  (nothing is lost: lossless)

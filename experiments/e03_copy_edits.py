@@ -1,4 +1,4 @@
-"""E03 - Copy-with-edits as shortest path (Case 5-6).
+"""E03 - Copy-with-edits as shortest path (Case 7).
 
 Static surrogate cost model (bits), identical for every variant:
   tag 1 bit; literal = order-0 surprisal; copy = Elias-delta(offset) + Elias-gamma(len-MIN+1);

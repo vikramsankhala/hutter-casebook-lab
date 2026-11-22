@@ -47,7 +47,7 @@ class TestCoders(unittest.TestCase):
         blob = coders.encode_with_model(data, mk)
         self.assertEqual(coders.decode_with_model(blob, len(data), mk), data)
         ideal = models.cost_bits(data, mk()) / 8
-        self.assertLess(abs(len(blob) - ideal), 0.05 * ideal + 8)  # quantisation sharpens an under-confident model (see E02)
+        self.assertLess(abs(len(blob) - ideal), 0.05 * ideal + 8)  # the one-count floor in quantize() lifts rare events the model gives too little mass (~500 of 20,000 bytes here)
 
     def test_rans_roundtrip(self):
         fr = [4, 2, 1, 1]

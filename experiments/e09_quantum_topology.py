@@ -1,4 +1,4 @@
-"""E09 - Quantum-topology approaches (Case 12).
+"""E09 - Quantum-topology approaches (Case 13).
 
 (a) Kauffman bracket by STATE SUM (a partition function over 2^c smoothings), verified on the
     trefoil and figure-eight knots against the textbook Laurent polynomials.

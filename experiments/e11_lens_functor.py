@@ -1,4 +1,4 @@
-"""E11 - Functorial approaches (Case 14): preprocessing as lenses, compression as an approximate monoid map.
+"""E11 - Functorial approaches (Case 15): preprocessing as lenses, compression as an approximate monoid map.
 
 (a) CaseLens and WordDictLens; PutGet / GetPut checked on the corpus and on random inputs; composition checked.
     Cost accounting: downstream(view) + cost(complement) [+ dictionary]. A lowercase 'view' WITHOUT its
