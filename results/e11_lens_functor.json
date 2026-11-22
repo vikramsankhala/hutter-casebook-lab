@@ -1,0 +1,62 @@
+{
+  "a_lenses": {
+    "bytes": 60000,
+    "laws": {
+      "case": {
+        "samples": 201,
+        "put_get": 201,
+        "get_put": 201
+      },
+      "worddict": {
+        "samples": 201,
+        "put_get": 201,
+        "get_put": 201
+      },
+      "composed": {
+        "samples": 201,
+        "put_get": 201,
+        "get_put": 201
+      }
+    },
+    "naive_lowercase_without_complement_is_lossless": false,
+    "view_bytes": 36266,
+    "upper_case_letters": 1241,
+    "dictionary_words": 100,
+    "xz": {
+      "raw": 12928,
+      "pipeline_view": 11112,
+      "complement_case": 1292,
+      "complement_dict": 584,
+      "pipeline_total": 12988
+    },
+    "order3_cm": {
+      "raw": 13531,
+      "pipeline_view": 12602,
+      "pipeline_total_with_xz_complements": 14478
+    }
+  },
+  "b_subadditivity_defect": {
+    "two halves of corpus": {
+      "Cx": 9388,
+      "Cy": 9712,
+      "Cxy": 16680,
+      "defect_bytes": 2420,
+      "NCD": 0.7508
+    },
+    "article and its revision": {
+      "Cx": 1148,
+      "Cy": 1196,
+      "Cxy": 1220,
+      "defect_bytes": 1124,
+      "NCD": 0.0602
+    },
+    "two independent random strings": {
+      "Cx": 5060,
+      "Cy": 5060,
+      "Cxy": 10060,
+      "defect_bytes": 60,
+      "NCD": 0.9881
+    }
+  },
+  "_experiment": "e11_lens_functor"
+}

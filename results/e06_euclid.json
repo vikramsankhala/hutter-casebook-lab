@@ -1,0 +1,16 @@
+{
+  "a_translation_repeat": {
+    "copies": 6894,
+    "plain_bits": 151349,
+    "repeat_cache_bits": 155442,
+    "cache_hit_rate": 0.0209,
+    "gain_bytes": -512
+  },
+  "b_row_translation": {
+    "base_order3_bpb": 2.0627,
+    "base_plus_mixer_only_bpb": 1.9859,
+    "plus_above_left_bpb": 1.9526,
+    "plus_noise_control_bpb": 1.9709
+  },
+  "_experiment": "e06_euclid"
+}

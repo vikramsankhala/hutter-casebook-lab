@@ -1,0 +1,32 @@
+{
+  "bytes": 40000,
+  "reference_bpb": {
+    "count_backoff_order1": 3.3562,
+    "count_backoff_order2": 2.2138,
+    "count_backoff_order3": 1.9378
+  },
+  "boltzmann_orders012_best_bpb": 2.2624,
+  "boltzmann_orders0123_best_bpb": 2.0897,
+  "born_amplitude_orders012_best_bpb": 2.304,
+  "learning_rate_sweep_bpb": {
+    "boltzmann_orders012": {
+      "1.2": 2.4012,
+      "2.5": 2.2624,
+      "5.0": 2.3409,
+      "10.0": 2.7312
+    },
+    "boltzmann_orders0123": {
+      "1.2": 2.1139,
+      "2.5": 2.0897,
+      "5.0": 2.3622,
+      "10.0": 3.1849
+    },
+    "born_amplitude_orders012": {
+      "1.0": 2.4485,
+      "2.0": 2.308,
+      "4.0": 2.304,
+      "8.0": 2.318
+    }
+  },
+  "_experiment": "e05_energy"
+}

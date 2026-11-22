@@ -1,0 +1,36 @@
+{
+  "bytes": 30000,
+  "projection_facts": {
+    "trials": 200,
+    "linear_minimises_forward_KL": 200,
+    "geometric_minimises_reverse_KL": 200
+  },
+  "best_single_order3_bpb": 2.0627,
+  "learning_rate_sweep_bpb": {
+    "geometric_sgd": {
+      "0.001": 1.9862,
+      "0.002": 1.9843,
+      "0.005": 1.9834,
+      "0.02": 2.0069
+    },
+    "geometric_natural": {
+      "1e-05": 2.0507,
+      "3e-05": 2.0359,
+      "0.0001": 2.0173,
+      "0.0003": 2.0286,
+      "0.001": 2.0382,
+      "0.02": 2.1255
+    }
+  },
+  "linear_bayes_bpb": 2.0628,
+  "linear_bayes_final_weights": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "geometric_sgd_best_bpb": 1.9834,
+  "geometric_natural_best_bpb": 2.0173,
+  "fisher_rao_distance_example": 1.1606,
+  "_experiment": "e07_infogeom"
+}

@@ -1,0 +1,39 @@
+{
+  "bytes": 60000,
+  "unit": "bits under static surrogate cost model (not a byte-exact archive)",
+  "greedy_exact": {
+    "bytes": 18021,
+    "ops": {
+      "lit": 6799,
+      "copy": 3990
+    }
+  },
+  "dp_exact": {
+    "bytes": 16564,
+    "ops": {
+      "lit": 7130,
+      "copy": 3794,
+      "substitutions": 0,
+      "substituted_bytes_that_are_digits": 0
+    }
+  },
+  "dp_with_edits": {
+    "bytes": 16282,
+    "ops": {
+      "lit": 6605,
+      "copy": 3417,
+      "edit": 214,
+      "substitutions": 452,
+      "substituted_bytes_that_are_digits": 337
+    }
+  },
+  "edit_gain_bytes": 282,
+  "dp_gain_over_greedy_bytes": 1457,
+  "control_no_revisions": {
+    "dp_exact_bytes": 18778,
+    "dp_edits_bytes": 18465,
+    "edit_gain_bytes": 313,
+    "substitutions": 503
+  },
+  "_experiment": "e03_copy_edits"
+}

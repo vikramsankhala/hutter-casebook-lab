@@ -1,0 +1,27 @@
+{
+  "bytes": 100000,
+  "corpus": "synthetic River Archive II unless HCL_ENWIK is set",
+  "zlib9_bytes": 23747,
+  "bz2_bytes": 17384,
+  "xz_bytes": 20404,
+  "order0_empirical_bpb": 4.8637,
+  "adaptive_order0_bpb": 4.8715,
+  "adaptive_order0_bytes": 60893,
+  "adaptive_order1_bpb": 3.2703,
+  "adaptive_order1_bytes": 40879,
+  "adaptive_order2_bpb": 2.0323,
+  "adaptive_order2_bytes": 25404,
+  "adaptive_order3_bpb": 1.6858,
+  "adaptive_order3_bytes": 21072,
+  "adaptive_order4_bpb": 1.5748,
+  "adaptive_order4_bytes": 19685,
+  "coder_check_20KB": {
+    "ideal_bytes": 5690.8,
+    "real_bytes_by_total_bits": {
+      "12": 5463,
+      "16": 5526,
+      "20": 5628
+    }
+  },
+  "_experiment": "e01_baselines"
+}

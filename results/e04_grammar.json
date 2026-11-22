@@ -1,0 +1,31 @@
+{
+  "bytes": 60000,
+  "order0_bytes": 36549,
+  "rules_available": 2500,
+  "description_length_bytes_by_rules": {
+    "0": 36549,
+    "100": 25037,
+    "200": 20496,
+    "400": 16007,
+    "600": 13996,
+    "800": 13715,
+    "1000": 13606,
+    "1500": 13888,
+    "2000": 14386,
+    "2500": 14866
+  },
+  "best_rule_count": 975,
+  "best_bytes": 13591,
+  "recursive_rules_in_best": 852,
+  "fixture_repeated_phrase": {
+    "bytes": 8064,
+    "description_length_bytes_by_rules": {
+      "0": 4725,
+      "4": 4271,
+      "8": 3937,
+      "16": 3229,
+      "40": 1309
+    }
+  },
+  "_experiment": "e04_grammar"
+}

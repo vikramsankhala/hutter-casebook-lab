@@ -1,0 +1,17 @@
+{
+  "bytes": 60000,
+  "symbol_256ary": {
+    "bpb": 2.1174,
+    "coder_calls_per_byte": 1.0
+  },
+  "binary_fixed8": {
+    "bpb": 2.0523,
+    "coder_calls_per_byte": 8.0
+  },
+  "binary_huffman_tree": {
+    "bpb": 2.0813,
+    "coder_calls_per_byte": 4.9,
+    "note": "tree built from corpus order-0 counts; table cost not charged"
+  },
+  "_experiment": "e02_multisymbol"
+}

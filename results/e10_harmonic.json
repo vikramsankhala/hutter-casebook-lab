@@ -1,0 +1,58 @@
+{
+  "a_period_character": {
+    "fixed_width_true_period": 28,
+    "detected_period": 28,
+    "peak_value": 0.587,
+    "peak_value_at_2P": 0.576,
+    "river_corpus_peak_lag": 3,
+    "river_corpus_peak_value": 0.092,
+    "fixed_width_mixer_only_bpb": 2.0752,
+    "fixed_width_plus_period_bpb": 1.0792,
+    "fixed_width_plus_noise_control_bpb": 1.6218
+  },
+  "b_generator_aware": {
+    "hecke_multiplicativity_checked": 202,
+    "hecke_violations": 0,
+    "tau_1_to_5": [
+      1,
+      -24,
+      252,
+      -1472,
+      4830
+    ],
+    "tau_table_vs_generator": [
+      {
+        "entries": 50,
+        "table_bytes": 440,
+        "xz_bytes": 352,
+        "generator_bytes": 114
+      },
+      {
+        "entries": 100,
+        "table_bytes": 1029,
+        "xz_bytes": 660,
+        "generator_bytes": 115
+      },
+      {
+        "entries": 200,
+        "table_bytes": 2374,
+        "xz_bytes": 1296,
+        "generator_bytes": 115
+      },
+      {
+        "entries": 400,
+        "table_bytes": 5397,
+        "xz_bytes": 2648,
+        "generator_bytes": 115
+      }
+    ],
+    "primes_page": {
+      "page_bytes": 1224,
+      "order3_model_cost_bytes": 524,
+      "generator_bytes": 82,
+      "share_of_corpus_cost_pct": 1.01,
+      "note": "a decoder that embeds the generator pays len(generator) once; net gain = model cost - generator - glue"
+    }
+  },
+  "_experiment": "e10_harmonic"
+}

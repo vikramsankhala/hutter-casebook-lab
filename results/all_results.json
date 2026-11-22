@@ -1,0 +1,479 @@
+{
+  "e01_baselines": {
+    "bytes": 100000,
+    "corpus": "synthetic River Archive II unless HCL_ENWIK is set",
+    "zlib9_bytes": 23747,
+    "bz2_bytes": 17384,
+    "xz_bytes": 20404,
+    "order0_empirical_bpb": 4.8637,
+    "adaptive_order0_bpb": 4.8715,
+    "adaptive_order0_bytes": 60893,
+    "adaptive_order1_bpb": 3.2703,
+    "adaptive_order1_bytes": 40879,
+    "adaptive_order2_bpb": 2.0323,
+    "adaptive_order2_bytes": 25404,
+    "adaptive_order3_bpb": 1.6858,
+    "adaptive_order3_bytes": 21072,
+    "adaptive_order4_bpb": 1.5748,
+    "adaptive_order4_bytes": 19685,
+    "coder_check_20KB": {
+      "ideal_bytes": 5690.8,
+      "real_bytes_by_total_bits": {
+        "12": 5463,
+        "16": 5526,
+        "20": 5628
+      }
+    },
+    "_experiment": "e01_baselines"
+  },
+  "e02_multisymbol": {
+    "bytes": 60000,
+    "symbol_256ary": {
+      "bpb": 2.1174,
+      "coder_calls_per_byte": 1.0
+    },
+    "binary_fixed8": {
+      "bpb": 2.0523,
+      "coder_calls_per_byte": 8.0
+    },
+    "binary_huffman_tree": {
+      "bpb": 2.0813,
+      "coder_calls_per_byte": 4.9,
+      "note": "tree built from corpus order-0 counts; table cost not charged"
+    },
+    "_experiment": "e02_multisymbol"
+  },
+  "e03_copy_edits": {
+    "bytes": 60000,
+    "unit": "bits under static surrogate cost model (not a byte-exact archive)",
+    "greedy_exact": {
+      "bytes": 18021,
+      "ops": {
+        "lit": 6799,
+        "copy": 3990
+      }
+    },
+    "dp_exact": {
+      "bytes": 16564,
+      "ops": {
+        "lit": 7130,
+        "copy": 3794,
+        "substitutions": 0,
+        "substituted_bytes_that_are_digits": 0
+      }
+    },
+    "dp_with_edits": {
+      "bytes": 16282,
+      "ops": {
+        "lit": 6605,
+        "copy": 3417,
+        "edit": 214,
+        "substitutions": 452,
+        "substituted_bytes_that_are_digits": 337
+      }
+    },
+    "edit_gain_bytes": 282,
+    "dp_gain_over_greedy_bytes": 1457,
+    "control_no_revisions": {
+      "dp_exact_bytes": 18778,
+      "dp_edits_bytes": 18465,
+      "edit_gain_bytes": 313,
+      "substitutions": 503
+    },
+    "_experiment": "e03_copy_edits"
+  },
+  "e04_grammar": {
+    "bytes": 60000,
+    "order0_bytes": 36549,
+    "rules_available": 2500,
+    "description_length_bytes_by_rules": {
+      "0": 36549,
+      "100": 25037,
+      "200": 20496,
+      "400": 16007,
+      "600": 13996,
+      "800": 13715,
+      "1000": 13606,
+      "1500": 13888,
+      "2000": 14386,
+      "2500": 14866
+    },
+    "best_rule_count": 975,
+    "best_bytes": 13591,
+    "recursive_rules_in_best": 852,
+    "fixture_repeated_phrase": {
+      "bytes": 8064,
+      "description_length_bytes_by_rules": {
+        "0": 4725,
+        "4": 4271,
+        "8": 3937,
+        "16": 3229,
+        "40": 1309
+      }
+    },
+    "_experiment": "e04_grammar"
+  },
+  "e05_energy": {
+    "bytes": 40000,
+    "reference_bpb": {
+      "count_backoff_order1": 3.3562,
+      "count_backoff_order2": 2.2138,
+      "count_backoff_order3": 1.9378
+    },
+    "boltzmann_orders012_best_bpb": 2.2624,
+    "boltzmann_orders0123_best_bpb": 2.0897,
+    "born_amplitude_orders012_best_bpb": 2.304,
+    "learning_rate_sweep_bpb": {
+      "boltzmann_orders012": {
+        "1.2": 2.4012,
+        "2.5": 2.2624,
+        "5.0": 2.3409,
+        "10.0": 2.7312
+      },
+      "boltzmann_orders0123": {
+        "1.2": 2.1139,
+        "2.5": 2.0897,
+        "5.0": 2.3622,
+        "10.0": 3.1849
+      },
+      "born_amplitude_orders012": {
+        "1.0": 2.4485,
+        "2.0": 2.308,
+        "4.0": 2.304,
+        "8.0": 2.318
+      }
+    },
+    "_experiment": "e05_energy"
+  },
+  "e06_euclid": {
+    "a_translation_repeat": {
+      "copies": 6894,
+      "plain_bits": 151349,
+      "repeat_cache_bits": 155442,
+      "cache_hit_rate": 0.0209,
+      "gain_bytes": -512
+    },
+    "b_row_translation": {
+      "base_order3_bpb": 2.0627,
+      "base_plus_mixer_only_bpb": 1.9859,
+      "plus_above_left_bpb": 1.9526,
+      "plus_noise_control_bpb": 1.9709
+    },
+    "_experiment": "e06_euclid"
+  },
+  "e07_infogeom": {
+    "bytes": 30000,
+    "projection_facts": {
+      "trials": 200,
+      "linear_minimises_forward_KL": 200,
+      "geometric_minimises_reverse_KL": 200
+    },
+    "best_single_order3_bpb": 2.0627,
+    "learning_rate_sweep_bpb": {
+      "geometric_sgd": {
+        "0.001": 1.9862,
+        "0.002": 1.9843,
+        "0.005": 1.9834,
+        "0.02": 2.0069
+      },
+      "geometric_natural": {
+        "1e-05": 2.0507,
+        "3e-05": 2.0359,
+        "0.0001": 2.0173,
+        "0.0003": 2.0286,
+        "0.001": 2.0382,
+        "0.02": 2.1255
+      }
+    },
+    "linear_bayes_bpb": 2.0628,
+    "linear_bayes_final_weights": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "geometric_sgd_best_bpb": 1.9834,
+    "geometric_natural_best_bpb": 2.0173,
+    "fisher_rao_distance_example": 1.1606,
+    "_experiment": "e07_infogeom"
+  },
+  "e08_topology": {
+    "a_planar_markup": {
+      "mixer_only_bpb": 1.8758,
+      "plus_stack_bpb": 1.8064,
+      "plus_noise_control_bpb": 1.8507,
+      "mixer_only_bits_on_closing_delimiters": 1957.2,
+      "mixer_only_bits_on_everything_else": 73074.7,
+      "plus_stack_bits_on_closing_delimiters": 1417.6,
+      "plus_stack_bits_on_everything_else": 70840.0,
+      "plus_noise_control_bits_on_closing_delimiters": 1986.4,
+      "plus_noise_control_bits_on_everything_else": 72041.9,
+      "closing_delimiter_bytes": 707,
+      "catalan_log2_of_pairs": 678.5,
+      "pairs_in_slice": 346,
+      "max_nesting_depth_observed": 1,
+      "stack_empty_at_end_of_corpus": true
+    },
+    "b_link_graph": {
+      "corpus_links": {
+        "betti": {
+          "V": 120,
+          "E": 5421,
+          "b0": 1,
+          "b1": 5302
+        },
+        "components_by_edge_weight_threshold": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "5": 20,
+          "8": 93,
+          "11": 117,
+          "13": 120,
+          "21": 120
+        },
+        "coding": {
+          "links": 1621,
+          "vocab": 120,
+          "uniform_bits_per_link": 6.907,
+          "order0_bits_per_link": 6.976,
+          "previous_link_bits_per_link": 7.31,
+          "persistent_cluster_context_bits_per_link": 6.976,
+          "oracle_true_cluster_bits_per_link": null
+        }
+      },
+      "structured_positive_control": {
+        "betti": {
+          "V": 120,
+          "E": 2599,
+          "b0": 1,
+          "b1": 2480
+        },
+        "components_by_edge_weight_threshold": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "5": 8,
+          "7": 13,
+          "8": 18,
+          "13": 101,
+          "15": 117,
+          "21": 120
+        },
+        "coding": {
+          "links": 3200,
+          "vocab": 120,
+          "uniform_bits_per_link": 6.907,
+          "order0_bits_per_link": 6.954,
+          "previous_link_bits_per_link": 7.27,
+          "persistent_cluster_context_bits_per_link": 6.826,
+          "oracle_true_cluster_bits_per_link": 6.219
+        }
+      }
+    },
+    "_experiment": "e08_topology"
+  },
+  "e09_quantum_topology": {
+    "a_kauffman_state_sum": {
+      "trefoil": "1*A^-7 + -1*A^-3 + -1*A^5",
+      "trefoil_matches_textbook_or_mirror": true,
+      "figure_eight": "1*A^-8 + -1*A^-4 + 1*A^0 + -1*A^4 + 1*A^8",
+      "figure_eight_matches_textbook": true,
+      "states_summed": {
+        "trefoil": 8,
+        "figure_eight": 16
+      }
+    },
+    "b_amplitudes": {
+      "loop_weight_d": 1.618034,
+      "golden_ratio": 1.618034,
+      "trefoil_bracket_at_A": [
+        -1.0,
+        -1.175571
+      ],
+      "born_probability_weight": 2.381966,
+      "note": "state weights are complex amplitudes; only squared magnitudes form a distribution"
+    },
+    "c_planar_source": {
+      "symbols": 30000,
+      "action_level_entropy_bpb": 1.7182,
+      "note": "action entropy is an UPPER bound on symbol entropy: a symbol equal to the pending closer can arise from a pop or a push, so a symbol-level model may legitimately beat it",
+      "generic_order2_bpb": 1.767,
+      "generic_order4_bpb": 1.7717,
+      "generic_order6_bpb": 1.9875,
+      "generic_order8_bpb": 2.3051,
+      "stack_aware_bpb": 1.5654,
+      "freely_reduced_length": 4
+    },
+    "_experiment": "e09_quantum_topology"
+  },
+  "e10_harmonic": {
+    "a_period_character": {
+      "fixed_width_true_period": 28,
+      "detected_period": 28,
+      "peak_value": 0.587,
+      "peak_value_at_2P": 0.576,
+      "river_corpus_peak_lag": 3,
+      "river_corpus_peak_value": 0.092,
+      "fixed_width_mixer_only_bpb": 2.0752,
+      "fixed_width_plus_period_bpb": 1.0792,
+      "fixed_width_plus_noise_control_bpb": 1.6218
+    },
+    "b_generator_aware": {
+      "hecke_multiplicativity_checked": 202,
+      "hecke_violations": 0,
+      "tau_1_to_5": [
+        1,
+        -24,
+        252,
+        -1472,
+        4830
+      ],
+      "tau_table_vs_generator": [
+        {
+          "entries": 50,
+          "table_bytes": 440,
+          "xz_bytes": 352,
+          "generator_bytes": 114
+        },
+        {
+          "entries": 100,
+          "table_bytes": 1029,
+          "xz_bytes": 660,
+          "generator_bytes": 115
+        },
+        {
+          "entries": 200,
+          "table_bytes": 2374,
+          "xz_bytes": 1296,
+          "generator_bytes": 115
+        },
+        {
+          "entries": 400,
+          "table_bytes": 5397,
+          "xz_bytes": 2648,
+          "generator_bytes": 115
+        }
+      ],
+      "primes_page": {
+        "page_bytes": 1224,
+        "order3_model_cost_bytes": 524,
+        "generator_bytes": 82,
+        "share_of_corpus_cost_pct": 1.01,
+        "note": "a decoder that embeds the generator pays len(generator) once; net gain = model cost - generator - glue"
+      }
+    },
+    "_experiment": "e10_harmonic"
+  },
+  "e11_lens_functor": {
+    "a_lenses": {
+      "bytes": 60000,
+      "laws": {
+        "case": {
+          "samples": 201,
+          "put_get": 201,
+          "get_put": 201
+        },
+        "worddict": {
+          "samples": 201,
+          "put_get": 201,
+          "get_put": 201
+        },
+        "composed": {
+          "samples": 201,
+          "put_get": 201,
+          "get_put": 201
+        }
+      },
+      "naive_lowercase_without_complement_is_lossless": false,
+      "view_bytes": 36266,
+      "upper_case_letters": 1241,
+      "dictionary_words": 100,
+      "xz": {
+        "raw": 12928,
+        "pipeline_view": 11112,
+        "complement_case": 1292,
+        "complement_dict": 584,
+        "pipeline_total": 12988
+      },
+      "order3_cm": {
+        "raw": 13531,
+        "pipeline_view": 12602,
+        "pipeline_total_with_xz_complements": 14478
+      }
+    },
+    "b_subadditivity_defect": {
+      "two halves of corpus": {
+        "Cx": 9388,
+        "Cy": 9712,
+        "Cxy": 16680,
+        "defect_bytes": 2420,
+        "NCD": 0.7508
+      },
+      "article and its revision": {
+        "Cx": 1148,
+        "Cy": 1196,
+        "Cxy": 1220,
+        "defect_bytes": 1124,
+        "NCD": 0.0602
+      },
+      "two independent random strings": {
+        "Cx": 5060,
+        "Cy": 5060,
+        "Cxy": 10060,
+        "defect_bytes": 60,
+        "NCD": 0.9881
+      }
+    },
+    "_experiment": "e11_lens_functor"
+  },
+  "e12_physics": {
+    "a_temperature": {
+      "grid": [
+        0.7,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.6,
+        2.0
+      ],
+      "best_T_on_first_half": 1.4,
+      "second_half_bpb_T1": 1.7288,
+      "second_half_bpb_tuned": 1.7114
+    },
+    "b_renormalisation": {
+      "mixer_only_bpb": 1.9859,
+      "plus_word_scale_bpb": 1.7139,
+      "plus_class_block_scale_bpb": 1.8467,
+      "plus_both_scales_bpb": 1.6448,
+      "plus_noise_control_bpb": 1.9809
+    },
+    "c_zipf": {
+      "fitted_exponent": 0.936,
+      "planted_exponent": 1.0,
+      "vocabulary": 1350
+    },
+    "d_landauer": {
+      "landauer_J_per_bit_at_300K": 2.870978885078724e-21,
+      "enwik9_bits": 8000000000.0,
+      "landauer_floor_J": 2.296783108062979e-11,
+      "assumed_machine_J": 18000000.0,
+      "ratio": 7.837048233596827e+17,
+      "assumptions": "100 W average draw, 50 h, 300 K"
+    },
+    "e_recurrence_entropy_rate": {
+      "ornstein_weiss_bits_per_byte": 0.4775,
+      "order4_model_bpb": 2.0198,
+      "validation": {
+        "iid_4_symbol_true_2_bits": 1.8582,
+        "corpus_without_revisions": 1.2665,
+        "order4_on_corpus_without_revisions": 2.0687
+      },
+      "note": "the recurrence estimator converges slowly and is biased on short samples; treat as an order-of-magnitude cross-check"
+    },
+    "_experiment": "e12_physics"
+  }
+}
