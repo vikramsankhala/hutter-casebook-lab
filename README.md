@@ -10,7 +10,7 @@ The casebook and the instructor handbook are in [`books/`](books/).
 
 ## Interactive companion
 
-[`interactive/index.html`](interactive/) is a single self-contained page with one tool per case (open it in any browser).
+[`interactive/Hutter-Casebook-Companion.html`](interactive/) is a single self-contained, offline app: plain-language ideas, one tool and self-check questions per case, plus a glossary. Download it and open it in any browser.
 
 ## Run
 
